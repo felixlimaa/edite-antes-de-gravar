@@ -37,7 +37,7 @@ window.onload = () => {
     renderSummary();
 };
 
-//Etapas do Formulário
+//Etapas do Formulário do Edite Antes de Editar
 const steps = [
     {
         title: "Objetivo de Comunicação",
@@ -191,6 +191,7 @@ function renderSummary() {
     }).join("");
 }
 
+//Mostrar popup final funcionando
 function showFinalPopup() {
     const popup = document.getElementById("finalPopup");
     popup.innerHTML = `
@@ -261,21 +262,6 @@ function sanitizeFileName(text) {
         .replace(/[^a-z0-9\s-]/g, "")  // remove caracteres especiais
         .replace(/\s+/g, "-")          // espaços viram hífen
         + ".txt";
-}
-
-function showFinalPopup() {
-    const popup = document.getElementById("finalPopup");
-    popup.innerHTML = `
-        <div class="popup-content">
-          <h2>Roteiro Finalizado!</h2>
-          <p>Escolha o que fazer com seu roteiro:</p>
-          <button onclick="copyScript()">📋 Copiar Roteiro</button>
-          <button onclick="downloadScript()">⬇️ Baixar .txt agora</button>
-          <button onclick="openSaveAsModal()">💾 Salvar Como</button>
-          <button onclick="closeFinalPopup()">✅ Ok</button>
-        </div>
-      `;
-    popup.classList.add("active");
 }
 
 // Botão “Salvar Como” abre modal customizado
