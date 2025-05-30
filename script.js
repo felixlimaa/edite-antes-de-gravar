@@ -23,6 +23,36 @@ function closeCookiePopup() {
     document.getElementById("cookiePopup").classList.remove("active");
 }
 
+// ----- COOKIES -----
+
+function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + "=" + encodeURIComponent(value) + "; expires=" + expires + "; path=/";
+}
+
+function getCookie(name) {
+    return document.cookie.split("; ").find(row => row.startsWith(name + "="));
+}
+
+function acceptCookies() {
+    setCookie("cookieAccepted", "true", 365);
+    closeCookiePopup();
+}
+
+function closeCookiePopup() {
+    document.getElementById("cookiePopup").classList.remove("active");
+}
+
+// Verifica se o cookie já existe
+window.onload = () => {
+    if (getCookie("cookieAccepted")) {
+        closeCookiePopup();
+    }
+    renderStep();
+    renderSummary();
+};
+
+//Etapas do Formulário
 const steps = [
     {
         title: "Objetivo de Comunicação",
@@ -236,35 +266,6 @@ function showMessage(text, type = "success") {
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 }
-
-// ----- COOKIES -----
-
-function setCookie(name, value, days) {
-    const expires = new Date(Date.now() + days * 864e5).toUTCString();
-    document.cookie = name + "=" + encodeURIComponent(value) + "; expires=" + expires + "; path=/";
-}
-
-function getCookie(name) {
-    return document.cookie.split("; ").find(row => row.startsWith(name + "="));
-}
-
-function acceptCookies() {
-    setCookie("cookieAccepted", "true", 365);
-    closeCookiePopup();
-}
-
-function closeCookiePopup() {
-    document.getElementById("cookiePopup").classList.remove("active");
-}
-
-// Verifica se o cookie já existe
-window.onload = () => {
-    if (getCookie("cookieAccepted")) {
-        closeCookiePopup();
-    }
-    renderStep();
-    renderSummary();
-};
 
 // Função para limpar e gerar nome válido para arquivo a partir do título
 function sanitizeFileName(text) {
