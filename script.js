@@ -1,10 +1,8 @@
-// Roda ao carregar a página
+// Roda os Cookies ao carregar a página
 document.addEventListener("DOMContentLoaded", checkCookies);
 
 function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
+    return document.cookie.split("; ").find(row => row.startsWith(name + "="));
 }
 
 function checkCookies() {
@@ -17,30 +15,17 @@ function checkCookies() {
 function acceptCookies() {
     document.cookie = "cookiesAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;
     document.getElementById("cookiePopup").classList.remove("active");
-}
-
-function closeCookiePopup() {
-    document.getElementById("cookiePopup").classList.remove("active");
-}
-
-// ----- COOKIES -----
-
-function setCookie(name, value, days) {
-    const expires = new Date(Date.now() + days * 864e5).toUTCString();
-    document.cookie = name + "=" + encodeURIComponent(value) + "; expires=" + expires + "; path=/";
-}
-
-function getCookie(name) {
-    return document.cookie.split("; ").find(row => row.startsWith(name + "="));
-}
-
-function acceptCookies() {
     setCookie("cookieAccepted", "true", 365);
     closeCookiePopup();
 }
 
 function closeCookiePopup() {
     document.getElementById("cookiePopup").classList.remove("active");
+}
+
+function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + "=" + encodeURIComponent(value) + "; expires=" + expires + "; path=/";
 }
 
 // Verifica se o cookie já existe
