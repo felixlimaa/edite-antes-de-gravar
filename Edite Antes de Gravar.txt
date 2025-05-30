@@ -1,0 +1,51 @@
+Importe! Monte um aplicativo HTML, CSS, JS de criação de conteúdo. Importante! Crie tudo num único arquivo. Vou te mandar a lógica completa abaixo:
+
+Inclua um título na própria página: "Edite Antes de Gravar" — embaixo do título, escreva o seguinte subtítulo: "Livre de edições demoradas e criando mais conteúdo."
+
+Mostre as informações que o usuário já preencheu numa divisão do lado direito da interface do Desktop. Para manter a responsividade nos dispositivos móveis, pode colocar essa divisão do lado direito embaixo da divisão que o usuário usa para preencher. Em seguida, inicie a Lógica principal do App (siga exatamente essa ordem, sem alterar nadinha):
+1. Peça para o usuário escrever o Objetivo de Comunicação. Inclua na área de texto abaixo: "Que emoção você quer causar no seu espectador?" 2. Peça para o usuário escrever o Objetivo de Marketing. Inclua na área de texto abaixo: "Qual é a ação que você quer que o espectador tome através do seu conteúdo?" 3. Peça para o usuário escrever o Temperatura de Público. Inclua na área de texto abaixo: "Seu público é homem, mulher, frio, quente, morno, o que ele sabe?" 4. Peça para o usuário escrever a Big Idea. Inclua na área de texto abaixo: "Qual é a ideia principal por trás do conteúdo?" 5. Peça para o usuário escrever o Final. Inclua na área de texto abaixo: "Qual é o final que você não pode revelar que obriga o espectador a ir embora?" 6. Peça para o usuário escrever o Título. Inclua na área de texto abaixo: "Qual é a frase que causa identificação instantânea com o seu espectador?" 7. Peça para o usuário escrever a Introdução. Inclua na área de texto abaixo: "Ele entrou no seu conteúdo, prepare ele para o desenvolvimento." 8. Peça para o usuário escrever o Desenvolvimento. Inclua na área de texto abaixo: "Mostre as pistas do Fim que o Início escondeu. Você pode usar antônimos pro Clímax ter uma reviravolta mais forte." 9. Peça para o usuário escrever o Clímax. Inclua na área de texto abaixo: "Escale a emoção antes de revelar o que de fato está por trás de tudo." 10. Peça para o usuário escrever o CTA. Inclua na área de texto abaixo: "Peça uma ação específica que está diretamente relacionada ao seu objetivo de marketing." 11. A etapa do CTA será a última. Então encerre a repetição sem duplicar a resposta do CTA na opção de "copiar" e "baixar .txt".
+
+Antes de mostrar o Roteiro Completo, por favor, reorganize as informações na seguinte ordem: 1. Objetivo de Comunicação 2. Objetivo de Marketing 3. Termômetro de Público 4. Big Idea 5. Título [Não escreva "Título", apenas mostre o que o usuário colocou como Título.] 6. Introdução [Não escreva "Introdução", apenas mostre o que o usuário colocou como Introdução] 7. Desenvolvimento [Não escreva "Desenvolvimento", apenas mostre o que o usuário colocou como Desenvolvimento] 8. Clímax [Não escreva "Clímax", apenas mostre o que o usuário colocou como Clímax] 9. Final [Não escreva "Final", apenas mostre o que o usuário colocou como Final] 10. CTA [Não escreva "CTA", apenas mostre o que o usuário colocou como CTA] 11. Ao finalizar todo o processo, mostre o roteiro completo junto com o botão de "baixar o roteiro .txt" e "copiar para a área de transferência".
+Por favor, represente a ideia de "editar antes de gravar" no design aplicando a proporção áurea com harmonia, de modo convidativo e confortável para o usuário.
+
+Importante! Também preciso que você adicione uma botão de próximo na primeira etapa da lógica, um botão de próximo e voltar nas etapas do meio, e um botão de voltar e um botão finalizar na última etapa da lógica para salvar os dados internamente no arquivo .txt e na opção copiar para área de transferência. Só faça apenas isso. Não precisa mudar o design do CSS.
+
+Importante! Avise para o usuário que o site usa cookies para salvar as informações automaticamente. Com isso avisado, crie um cookie no navegador do usuário para salvar todas as informações que ele for preenchendo no navegador dele. Importante! E inclua uma opção de OK. Quando o usuário clicar, é para para fechar o popup dos Cookies.
+
+Inclua uma opção de modo escuro e modo claro.
+
+Importante! Mostre as respostas anteriores conforme as perguntas são respondidas.
+
+Para o design, quero que aplique a proporção áurea para deixar bonito, agradável, convidativo, organizado e inclua algumas animações sutis para trazer conforto ao usuário. Quero que, por favor, também inclua a opção de "Modo claro" e "Modo escuro" num botão flutuante. Se quiser, inclua uma imagem de fundo cujo o significado principal é representar a frase "edite antes da gravação" de forma visual, harmônica e confortável através do design do app.
+
+Melhore o design e a aparência dele. Ainda está muito "feio", vamos assim dizer... Torne-o mais bonito, mais minimalista. Quero que o usuário sinta paz ao usar o aplicativo, que ele se sinta mais calmo e aliviado. Use algo que o mantenha o tranquilo e calmo para criar.
+
+Quando for incluir o Modo Escuro, ative a página inteira escura, pois a página ainda está ficando clara nesse modo.
+
+Para tornar a experiência de usuário mais premium, adicione uma imagem ao fundo da página. Pode ser uma textura simples ou algo que represente naturalidade.
+
+Coloque o botão de modo claro/escuro no canto inferior direito da página.
+
+Ajuste a área de texto para caber proporcionalmente dentro da div em que ele se encontra. A borda direita está ultrapassando o retângulo.
+
+Mantenha os botões da página na cor #635ae9, pois você fez um teste e eu gostei dessa cor.
+
+Os textos "Objetivo de Comunicação", "Objetivo de Marketing", "Termômetro de Público", "Big Idea", "Final", "Título", "Introdução", "Desenvolvimento", "Clímax" e "CTA" estão muito em cima da área de texto preenchida pelo usuário. Use proporção áurea para afastar cada um dos tópicos de forma harmônica e agradável, sem prejudicar a experiência visual e sensorial do usuário.
+
+Não permita o usuário avançar para o próximo item sem que o texto esteja preenchido. O preenchimento é obrigatório.
+
+Quando o usuário clicar em finalizar, não baixe nada. Importante! Inclua o botão "copiar roteiro" e o botão "baixar .txt do roteiro". Escreva um popup dizendo: "Roteiro criado! Copie ele ou baixe o .txt para abrir num teleprompter durante sua gravação. :)" Inclua um X no canto superior direito e um botão de OK para fechar esse popup.
+
+No rodapé, peça para a pessoa seguir o criador do Edite Antes de Gravar no Instagram. E inclua esse link: https://instagram.com/ofelixlima
+
+Deixe o app mais responsivo para dispositivos móveis, como tablets e celulares. Centralize o Título e o Subtítulo do Site e centralize o botão "próximo" quando o voltar não estiver aparecendo.
+
+Deixe o app visualmente confortável baseando-se no design de proporção áurea voltado para as telas grandes.
+
+Inclua um aviso que o formulário não pode ficar vazio.
+
+O modo escuro tem que escurecer a página inteira, não só uma parte dela.
+
+Gere o código completo, não importa se ficar enorme. Pode gerar assim mesmo.
+
+Também conto com a sua ajuda para testar o site usando a sua rapidez e inteligência para consertar os erros de lógica que eu posso ter cometido aqui e possíveis bugs no aplicativo.
