@@ -232,7 +232,10 @@ function downloadScript() {
 }
 
 function closeFinalPopup() {
-    document.getElementById("finalPopup").classList.remove("active");
+  const popup = document.getElementById("finalPopup");
+  popup.classList.add("hidden");
+  popup.classList.remove("active");
+  removeDarkOverlay();
 }
 
 function showMessage(text, type = "success") {
@@ -349,12 +352,7 @@ function showFinalPopup() {
   document.getElementById("btnNew").addEventListener("click", openConfirmNewModal);
 }
 
-function closeFinalPopup() {
-  const popup = document.getElementById("finalPopup");
-  popup.classList.add("hidden");
-  popup.classList.remove("active");
-  removeDarkOverlay();
-}
+
 
 // Função para adicionar/remover overlay escurecido
 function addDarkOverlay() {
