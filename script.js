@@ -238,18 +238,19 @@ function closeFinalPopup() {
   removeDarkOverlay();
 }
 
-function showMessage(text, type = "success") {
-    const message = document.createElement("div");
-    message.className = `custom-message ${type}`;
-    message.textContent = text;
+// Função para mostrar mensagens temporárias na tela
+function showMessage(msg, type = "success") {
+  // Cria um elemento temporário
+  let messageEl = document.createElement("div");
+  messageEl.className = `toast-message ${type}`; // estilos podem ser definidos no CSS
+  messageEl.textContent = msg;
+  document.body.appendChild(messageEl);
 
-    // Adiciona no topo do body
-    document.body.appendChild(message);
-
-    // Remove depois de 3 segundos
-    setTimeout(() => {
-        message.remove();
-    }, 3000);
+  // Remove após 3 segundos
+  setTimeout(() => {
+    messageEl.classList.add("fade-out");
+    setTimeout(() => document.body.removeChild(messageEl), 500);
+  }, 3000);
 }
 
 function toggleDarkMode() {
@@ -305,22 +306,6 @@ function saveAsCustomFileName() {
 
     closeSaveAsModal();
     showMessage(`Arquivo salvo como "${fileName}"`);
-}
-
-
-// Função para mostrar mensagens temporárias na tela
-function showMessage(msg, type = "success") {
-  // Cria um elemento temporário
-  let messageEl = document.createElement("div");
-  messageEl.className = `toast-message ${type}`; // estilos podem ser definidos no CSS
-  messageEl.textContent = msg;
-  document.body.appendChild(messageEl);
-
-  // Remove após 3 segundos
-  setTimeout(() => {
-    messageEl.classList.add("fade-out");
-    setTimeout(() => document.body.removeChild(messageEl), 500);
-  }, 3000);
 }
 
 // Funções para abrir e fechar o popup final

@@ -485,10 +485,10 @@ footer a {
 
 .toast-message {
     position: fixed;
-    bottom: 20px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #4caf50;
+    background: var(--primary-color);
     color: white;
     padding: 12px 24px;
     border-radius: 24px;
