@@ -57,7 +57,7 @@ const steps = [
     },
     {
         title: "Big Idea",
-        paragraph: "Defina a raiz que vai sustentar pedacinho do seu conteúdo. Imagine a Big Idea como a sua mãe. Cada coisa que você faz ou fala tem que obedecê-la. — 'E AI DE VOCÊ, SE NÃO OBEDECER!' — É melhor obedecer pras visualizações não ajudarem a sua mãe... 😅",
+        paragraph: "Defina a raiz que vai sustentar cada pedacinho do seu conteúdo. Imagine a Big Idea como a sua mãe. Cada coisa que você faz ou fala tem que obedecê-la. — 'E AI DE VOCÊ, SE NÃO OBEDECER!' — É melhor obedecer pras visualizações não ajudarem a sua mãe... 😅",
         placeholder: "Ex.: A partir de hoje você vai editar seus vídeos antes de gravar."
     },
     {
