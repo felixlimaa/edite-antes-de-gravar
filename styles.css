@@ -39,10 +39,8 @@ body.dark-mode {
 .form-section,
 .summary-section {
     flex: 1 1 40%;
-    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: var(--radius);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
 }
 
@@ -183,23 +181,6 @@ footer a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
-}
-
-#videoContainer {
-    width: 54vw;
-    max-width: 216px;
-    aspect-ratio: 9 / 16;
-    margin: 0 auto;
-    position: relative;
-}
-
-#videoContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
 }
 
 .hint-drag {
