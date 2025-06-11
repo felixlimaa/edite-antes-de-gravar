@@ -1,23 +1,54 @@
 :root {
-    --primary-color: #635ae9;
-    --light-bg: #f8f8ff;
-    --dark-bg: #1c1c1e;
-    --light-text: #000;
-    --dark-text: #f1f1f1;
+    --primary-color: #1e2f20;
+    --light-bg: #c2c770;
+    --dark-bg: #1e2f20;
+    --light-text: #1e2f20;
+    --dark-text: #c2c770;
     --radius: 12px;
     --transition: all 0.3s ease-in-out;
+    --filme-responsividade: 0,1450809724;
+    --filme-microresponsividade:0,2462643678;
 }
 
 body {
+    padding: 0;
     margin: 0;
     font-family: 'Helvetica Neue', sans-serif;
     background: var(--light-bg);
     color: var(--light-text);
     transition: var(--transition);
-    background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
-    background-repeat: repeat;
-    background-size: cover;
+    background-image: url('/imagens/filme-edite-antes-de-gravar-full.png');
+    background: linear-gradient(rgba(40, 75, 54, 0.35), rgba(40, 75, 54, 0.35)), 
+              url('/imagens/filme-edite-antes-de-gravar-full.png');
+    background-repeat: no-repeat;
+    background-size: 106vw;
+    background-position: top;
+    
 }
+
+@media (max-width: 1102px) {
+  body {
+    background-size: calc(100vw * var(--filme-microresponsividade));
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('/imagens/filme-edite-antes-de-gravar-full-768.png');
+    background-size: calc(100vw * var(--filme-responsividade));
+    }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url('/imagens/filme-edite-antes-de-gravar-full-518.png');
+    background-size: 100vw;
+    background-position: top center;
+    }
+}
+
+
+
 
 body.dark-mode {
     background: var(--dark-bg);
