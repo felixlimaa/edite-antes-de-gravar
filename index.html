@@ -18,24 +18,32 @@
     <button onclick="acceptCookies()">OK</button>
   </div>
 
-    <div class="container">
-      <div class="form-section">
-        <h1 class="titulo">Ao <i>Editar Antes de Gravar</i>, você concorda em:</h1>
-        <p class="subtitulo">Salvar as valiosas horas daqueles que editam seus vídeos (Se você edita tudo, <b>é ULTRA recomendado!</b>),
-          criando conteúdos com a caneta da sua voz, oscilando naturalidade em palavras friamente escolhidas através dos
-          passos a seguir:
-        </p>
+  <div class="container">
+    <div class="form-section">
+      <h1>Ao <i>Editar Antes de Gravar</i>, você concorda em:</h1>
+      <p>Salvar as valiosas horas daqueles que editam seus vídeos (Se você edita tudo, <b>é ULTRA recomendado!</b>),
+        criando conteúdos com a caneta da sua voz, oscilando naturalidade em palavras friamente escolhidas. Porque você
+        viu o vídeo abaixo e depois de 2 minutos e 17 segundos, entendeu os detalhes da edição antes de gravar, com
+        referências simples e fáceis de aplicar.
+      </p>
 
-        <div id="formSteps"></div>
-        <div class="controls" id="formControls"></div>
-
+      <div id="videoContainer">
+        <iframe id="ytPlayer" src="https://www.youtube.com/embed/B7WYNQsPf90?enablejsapi=1&rel=0&controls=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
 
-      <div class="summary-section">
-        <h2>Seu Roteiro</h2>
-        <div id="summary"></div>
-      </div>
+      <div id="formSteps"></div>
+      <div class="controls" id="formControls"></div>
+
     </div>
+
+    <div class="summary-section">
+      <h2>Suas Respostas</h2>
+      <div id="summary"></div>
+    </div>
+  </div>
 
   <!-- Popup Roteiro Finalizado -->
   <div id="finalPopup" class="popup-overlay hidden">
